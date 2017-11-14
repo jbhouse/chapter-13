@@ -21,7 +21,6 @@ public class EmailCreatorApp {
 	}
 	
 	public static void insertInfoIntoTemplate(String contactInfo, String template) {
-		StringBuilder sb = new StringBuilder(template);
 		String[] formattedInfo = contactInfo.replaceAll("\\s","").toLowerCase().split(",");
 		for (int i = 0; i < formattedInfo.length; i++) {
 			if (i<2) {
